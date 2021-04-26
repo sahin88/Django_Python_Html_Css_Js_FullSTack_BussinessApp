@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: deeppink !important;
+}
+html {
+  font-size: 12px;
+}
+
+.custom-input {
+  width: 92% !important;
+}
+
+form .form-customization {
+  border: 2px solid red !important;
+}
+
+.ifrm {
+  width: 450px;
+  height: 500px;
+}
+.table-customized {
+  background-color: lightpink;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: deeppink !important;
+  }
+
+  .ifrm {
+    width: 350px;
+    height: 370px;
+  }
+
+  .custom-input {
+    width: 80% !important;
+  }
+  .table-customized {
+    background-color: lightpink;
+  }
+  .thead-customized {
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: deeppink !important;
+  }
+
+  .ifrm {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    background-color: deeppink !important;
+  }
+
+  .ifrm {
+    width: 250 !important;
+    height: 300 !important;
+  }
+}

@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Roza Tex</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static  '/roza/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static  '/roza/css/style.css' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static  '/roza/css/modern-business.css' %}" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">ROZA TEX </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">HOME</a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">ABOUT</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/products">PRODUCTS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/admin">ADMIN ENTRANCE</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  {% block content%}
+  
+  
+  
+  {% endblock%}
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static  '/roza/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static  '/roza/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Contact form JavaScript -->
+  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+  <script src="{% static  '/roza/js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static  '/roza/js/contact_me.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+{%extends 'base.html'%} {% block content%} {% load static%}
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-sm-9 container mt-3">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">About
+      <small>Subheading</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/">Home</a>
+      </li>
+      <li class="breadcrumb-item active">About</li>
+    </ol>
+
+    <!-- Intro Content -->
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-3" src="{{about_top.image.url}}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>{{about_top.title}}</h2>
+        <p>{{about_top.description}}</p>
+         </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <h2>Applications</h2>
+    
+
+    <div class="row">
+      {% for  application in applications %}
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="{{application.main1.url}}" alt="">
+          <div class="card-body">
+            <a href="{% url 'application_detail'  id=application.id %}" class="card-title">{{application.application_field}}</a>
+          
+            <p class="card-text">{{application.description1}}</p>
+          </div>
+
+        </div>
+      </div>
+      {% endfor %}
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Team Member</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Team Member</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Our Customers -->
+    <!-- /.row -->
+    </div>
+  </div>
+  <!-- /.container -->
+  {% endblock%}
+

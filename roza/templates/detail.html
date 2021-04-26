@@ -1,0 +1,68 @@
+{%extends 'base.html'%} {% block content%} {% load static%}
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="col-sm-9 container mt-3">
+    <h1 class="mt-4 mb-3">
+      <small>{{application.application_field}}</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">{{application.application_field}}</li>
+    </ol>
+
+  {% if application.main1 %}
+    <div class="row mt-5">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="{{application.main1.url}}" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>{{application.title1}}</h3>
+       
+        <p>{{application.description1}}</p>
+      </div>
+    </div>
+    {%endif%}
+
+    {% if application.main2 %}
+    <div class="row mt-5">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="{{application.main2.url}}" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>{{application.title2}}</h3>
+       
+        <p>{{application.description2}}</p>
+      </div>
+    </div>
+    {%endif%}
+    <!-- /.row -->
+
+    {% if application.main3 %}
+    <div class="row mt-5">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="{{application.main3.url}}" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>{{application.title3}}</h3>
+       
+        <p>{{application.description3}}</p>
+      </div>
+    </div>
+    {%endif%}
+
+    <hr>
+
+    </div>
+  </div>
+   
+{% endblock%}
